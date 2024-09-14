@@ -7,7 +7,12 @@
  * @example [1, 2, 3] -> 6
 */
 function problem(numbers) {
-    return null;
+    sum = numbers.reduce((res, cur) => {
+        return res+cur;
+
+    },0);
+
+    return sum /numbers.length
 }
 
 const tests = [

@@ -7,7 +7,11 @@
  * @example [1, 2, 3] -> 6
 */
 function problem(numbers) {
-    return null;
+    num =0;
+    for (i=0; i< numbers.length; i++){
+        num += numbers[i]
+    }
+    return num
 }
 
 const tests = [

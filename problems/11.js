@@ -8,7 +8,10 @@
  * @example "racecar" -> true
 */
 function problem(str) {
-    return null;
+    let space = str.replace(/\s+/g, '').toLowerCase();
+    let reverse = space.split('').reverse().join('').toLowerCase();
+
+    return space == reverse;
 }
 
 const tests = [

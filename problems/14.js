@@ -7,7 +7,23 @@
  * @example [3,2,3] -> 3
 */
 function problem(numbers) {
-    return null;
+    dic = {};
+
+    for (i=0; i <numbers.length;i++){
+        if (!(numbers[i] in dic)) {
+            dic[numbers[i]] = 0;
+        }
+        dic[numbers[i]]+=1;
+
+    }
+    
+    major = Math.floor(numbers.length/2);
+
+    for (i=0;i,numbers.length;i++){
+        if (dic[numbers[i]] > major){
+            return numbers[i]
+        }
+    }
 }
 
 const tests = [
